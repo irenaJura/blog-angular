@@ -1,0 +1,25 @@
+/* Style for the entire post container */
+:host {
+  display: block;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Style the tags and date */
+p:first-of-type {
+  font-style: italic;
+  color: #999;
+}

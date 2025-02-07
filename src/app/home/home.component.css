@@ -1,0 +1,16 @@
+.blog-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.blog-item:hover {
+  background-color: #f0f0f0;
+}

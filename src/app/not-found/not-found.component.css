@@ -1,0 +1,15 @@
+:host {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  color: #666;
+}

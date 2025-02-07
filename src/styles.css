@@ -1,1 +1,154 @@
-/* You can add global styles to this file, and also import other style files */
+/* Basic reset and body styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Main heading styling */
+h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Basic link styling */
+a {
+  color: #06c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Blog card styling */
+ul {
+  padding: 0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+li {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+/* Post details styling */
+.post{
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+/* Comments section styling */
+.post-comments {
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+  padding: 10px 20px;
+}
+
+.post-comments h3 {
+  margin-top: 0;
+}
+
+.post-comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-comments li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-comments p {
+  margin: 5px 0;
+}
+
+/* 404 Not Found Page Styling */
+.not-found {
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
+  color: #666;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Style for buttons within the navigation bar */
+nav button {
+  padding: 7px 14px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #141414;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  padding: 7px 14px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #141414;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav h2 {
+
+  font-size: 20px;
+  color: #110404;
+  border: none;
+}
+
+nav button:hover {
+  background-color: #141414;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  nav ul li {
+    float: none;
+    width: 100%;
+  }
+}
+
+div.sticky-back-button {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  bottom: 0;
+  background-color: #f4f4f4; /* Same as nav bar */
+
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.01px solid #ccc;
+}

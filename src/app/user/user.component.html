@@ -1,0 +1,12 @@
+@if(user){
+<h2>{{ user.username }}'s Profile</h2>
+<p>{{ user.bio }}</p>
+<h3>Posts by {{ user.username }}:</h3>
+<ul>
+  @for(post of userPosts; track post.id){
+  <li><a [routerLink]="['../../post', post.id]">{{ post.title }}</a></li>
+  }
+</ul>
+}@else{
+<h2>User not found</h2>
+}
