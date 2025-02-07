@@ -9,5 +9,8 @@ import { Location } from '@angular/common';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  goBack(): void {}
+  private location = inject(Location);
+  goBack(): void {
+    this.location.back();
+  }
 }
