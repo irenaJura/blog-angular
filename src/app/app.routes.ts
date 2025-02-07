@@ -12,7 +12,7 @@ export const routes: Routes = [
   {
     path: 'post/:id',
     component: PostComponent,
-    children: [{ path: 'commnets/:id', component: PostCommentsComponent }],
+    children: [{ path: 'comments/:id', component: PostCommentsComponent }],
   },
   { path: '**', component: NotFoundComponent },
 ];

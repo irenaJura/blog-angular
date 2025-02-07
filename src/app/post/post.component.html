@@ -5,7 +5,9 @@
   <p>Posted on: {{ post.dateCreated | date:'mediumDate' }}</p>
   <p>Tags: {{ post.tags.join(', ') }}</p>
 
-  <a>View Comments</a>
+  <a [routerLink]="['comments', post.id]">View Comments</a>
+
   <!-- Child router outlet -->
+  <router-outlet></router-outlet>
 </div>
 }

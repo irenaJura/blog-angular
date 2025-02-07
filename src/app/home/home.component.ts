@@ -16,7 +16,9 @@ export class HomeComponent implements OnInit {
   private blogService = inject(BlogService);
   private router = inject(Router);
 
-  navigateToPost(id: number): void {}
+  navigateToPost(id: number): void {
+    this.router.navigate(['/post', id]);
+  }
 
   ngOnInit(): void {
     this.blogPosts = this.blogService.getPosts();

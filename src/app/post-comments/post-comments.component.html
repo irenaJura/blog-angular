@@ -1,18 +1,19 @@
 @if (post && post.comments.length > 0) {
-  <div>
+<div>
   <h3>Comments:</h3>
-    <ul>
-      @for (comment of post.comments; track comment.id) {
-        <li>
-          <strong><a>{{ comment.author }}</a></strong> ({{ comment.datePosted | date:'shortDate' }}): {{ comment.content }}
-        </li>
-      }
-    </ul>
-  </div>
-  }
+  <ul>
+    @for (comment of post.comments; track comment.id) {
+    <li>
+      <strong><a [routerLink]="['../../../../user', comment.userId]">{{ comment.author }}</a></strong> ({{ comment.datePosted |
+      date:'shortDate' }}): {{ comment.content }}
+    </li>
+    }
+  </ul>
+</div>
+}
 
 @if (post && post.comments.length === 0) {
-  <div>
-    <p>No comments yet.</p>
-  </div>
+<div>
+  <p>No comments yet.</p>
+</div>
 }

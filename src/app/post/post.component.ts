@@ -22,11 +22,11 @@ export class PostComponent implements OnInit {
     comments: [],
     userId: 0,
   };
-
+  @Input() id: number = 0;
   private blogService = inject(BlogService);
 
   ngOnInit(): void {
-    // const postId = Number(this.id);
-    // this.post = this.blogService.getPostById(postId);
+    const postId = Number(this.id);
+    this.post = this.blogService.getPostById(postId);
   }
 }

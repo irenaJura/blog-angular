@@ -28,7 +28,7 @@ export class PostCommentsComponent implements OnInit {
   private blogService = inject(BlogService);
 
   ngOnInit(): void {
-    // const postId = Number(this.id);
-    // this.post = this.blogService.getPostById(postId);
+    const postId = Number(this.id);
+    this.post = this.blogService.getPostById(postId);
   }
 }
